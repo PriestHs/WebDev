@@ -1,0 +1,22 @@
+.brands {
+    position: relative;
+    padding: 84px 0px 50px;
+
+    // overflow: hidden;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: -140px;
+        left: 0;
+        width: 195px;
+        height: 519px;
+
+        background-image: url(../img/brands/el.png);
+    }
+}
+.brands__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
