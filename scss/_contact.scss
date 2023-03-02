@@ -67,6 +67,7 @@
 .contact__item-form {
     padding-right: 12px;
     display: flex;
+    column-gap: 5px;
     align-items: center;
     max-width: 174px;
 
@@ -80,6 +81,13 @@
     color: $fontColor2;
 
     background-color: inherit;
+    &:focus {
+        color: #212529;
+        background-color: #fff;
+        border-color: #bdbdbd;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+    }
 }
 
 .contact__item-btn {

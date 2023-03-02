@@ -231,6 +231,7 @@ body {
   opacity: 0.8;
 }
 .nav__link span {
+  display: none;
   position: absolute;
   top: 25px;
   left: 50%;
@@ -270,6 +271,7 @@ body {
   opacity: 0.8;
 }
 .nav__login span {
+  display: none;
   position: absolute;
   top: 70px;
   right: 0;
@@ -380,6 +382,7 @@ body {
   margin-bottom: 80px;
 }
 .specialization__box span {
+  display: none;
   position: absolute;
   top: 850px;
   left: 50%;
@@ -464,6 +467,7 @@ body {
   transition: all 0.2s linear;
 }
 .specialization__item-link span {
+  display: none;
   position: absolute;
   top: 25px;
   left: 50%;
@@ -895,6 +899,8 @@ body {
 .contact__item-form {
   padding-right: 12px;
   display: flex;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
   align-items: center;
   max-width: 174px;
   background-color: #F2F2F2;
@@ -906,6 +912,13 @@ body {
   font-size: 12px;
   color: #514040;
   background-color: inherit;
+}
+.contact__item-input:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #bdbdbd;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
 }
 
 .contact__item-btn {
@@ -1074,6 +1087,14 @@ body.modal-open {
   display: block;
   width: 100%;
   border-radius: 50px;
+  transition: all 0.2s linear;
+}
+.popup-2__form input:nth-child(1):focus, .popup-2__form input:nth-child(2):focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #bdbdbd;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
 }
 
 .popup-2__form-name {
@@ -1098,9 +1119,13 @@ body.modal-open {
 }
 
 .popup-2__form-btn {
+  position: relative;
   margin-top: auto;
   padding: 13px 0px;
   font-size: 20px;
   color: #fff;
   background-color: #49AD09;
+}
+.popup-2__form-btn:active {
+  top: 1px;
 }/*# sourceMappingURL=main.css.map */

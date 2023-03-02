@@ -160,12 +160,6 @@ $(function() {
     }
 
     // всплывающая подсказка
-    $('.nav__link span').hide();
-    $('.specialization__item-link span').hide();
-    $('.specialization__box span').hide();
-    $('.nav__login span').hide();
-
-
     $('.nav__link').on('click', function() {
         if ( $('span', this).css('display') == 'none' ) {
             $('span', this).show(500).delay(2000).hide(500);
